@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
-
+import ss from "../s.json";
 const VideoPage = () => {
   const { id } = useParams();
 
@@ -20,8 +20,8 @@ const VideoPage = () => {
 
   let myMeeting = (element) => {
     // generate Kit Token
-    const appID = 1565879379;
-    const serverSecret = "you api key";
+    const appID = ss.appID;
+    const serverSecret = ss.serverSecret;
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appID,
       serverSecret,
@@ -56,7 +56,12 @@ const VideoPage = () => {
 
   return (
     <div>
-      VideoCall App by Deepesh Reddy {id}
+      <h3 style={{ textAlign: "center" }}>
+        Video Call link created by{" "}
+        <i>
+          <b>{id}</b>
+        </i>
+      </h3>
       <div ref={myMeeting}></div>
     </div>
   );
