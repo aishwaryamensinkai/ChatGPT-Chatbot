@@ -21,7 +21,7 @@ const VideoPage = () => {
   let myMeeting = (element) => {
     // generate Kit Token
     const appID = 1565879379;
-    const serverSecret = "c3e54c6577fcd04219b2ebfdfe66778b";
+    const serverSecret = "you api key";
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appID,
       serverSecret,
