@@ -1,4 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
 import "./css/App.css";
 import HomePage from "./components/HomePage";
 import VideoPage from "./components/VideoPage";
@@ -28,7 +33,12 @@ function App() {
           <img src={logo} alt="Logo" className="logo" />
           <h1>VCall</h1>
         </div>
-        <RouterProvider router={router} />
+        {/* <RouterProvider router={router} /> */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/room/:id" element={<VideoPage />} />
+          <Route path="/help" element={<HelpPage />} />
+        </Routes>
       </div>
     </>
   );
