@@ -12,7 +12,7 @@ const helpContent = (
         <ul>
           <li>
             1. <strong>To join a call:</strong> Go to the{" "}
-            <a href="/">Home Page</a>, enter your name, and click Join.
+            <a href="https://aishwaryamensinkai.github.io/Video-Call/">Home Page</a>, enter your name, and click Join.
           </li>
           <li>
             2. <strong>During the call:</strong> Use the controls provided by
